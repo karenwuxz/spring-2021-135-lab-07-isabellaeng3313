@@ -22,6 +22,7 @@ std::string unindent(){
     std::string lines;
     while(getline(std::cin, lines)){
         sentence += removeLeadingSpaces(lines);
+        sentence += "\n";
     }
     return sentence;
 }
